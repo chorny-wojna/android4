@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffc2"
+    tools:context="by.bsu.famcs.lab4guess.MainActivity">
+
+    <TableLayout
+        android:layout_width="357dp"
+        android:layout_height="492dp"
+        tools:layout_editor_absoluteY="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/interval" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <SeekBar
+                android:id="@+id/seekBar"
+                style="@style/Widget.AppCompat.SeekBar.Discrete"
+                android:layout_width="202dp"
+                android:layout_height="30dp"
+                android:clickable="true"
+                android:max="500"
+                android:progress="100"
+                tools:layout_editor_absoluteX="91dp"
+                tools:layout_editor_absoluteY="180dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/try_to_guess"
+                tools:layout_editor_absoluteX="162dp"
+                tools:layout_editor_absoluteY="29dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/input_value"
+                android:inputType="number" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:onClick="onClick"
+                android:text="@string/input_value" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="88dp"
+                android:layout_height="48dp"
+                android:onClick="onExitClick"
+                android:text="X"
+                tools:layout_editor_absoluteX="176dp"
+                tools:layout_editor_absoluteY="309dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gesture_input" />
+
+            <TextView
+                android:id="@+id/tvGestureInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <android.gesture.GestureOverlayView
+                android:id="@+id/go1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+            </android.gesture.GestureOverlayView>
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

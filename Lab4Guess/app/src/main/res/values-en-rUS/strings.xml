@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="behind">Guessing number is greater!</string>
+    <string name="ahead">Guessing number is lesser!</string>
+    <string name="hit">Hit!</string>
+    <string name="input_value">Input value</string>
+    <string name="play_more">Play more</string>
+    <string name="try_to_guess">Try to guess number (1 &#8211; </string>
+    <string name="parse_error">Enter a number.</string>
+    <string name="bounds_error">Enter a whole number between 1 and </string>
+    <string name="your_value">Enter value</string>
+    <string name="interval">Choose the max value of guessing number</string>
+
+</resources>

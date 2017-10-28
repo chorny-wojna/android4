@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="behind">Недолёт!</string>
+    <string name="ahead">Перелёт!</string>
+    <string name="hit">В точку!</string>
+    <string name="input_value">Ввести значение</string>
+    <string name="play_more">Сыграть ещё</string>
+    <string name="try_to_guess">Попробуйте угадать число (1 &#8211; </string>
+    <string name="parse_error">Введите число.</string>
+    <string name="bounds_error">Введите целое число от 1 до </string>
+    <string name="your_value">Ввести значение</string>
+    <string name="interval">Выберете максимальное значение</string>
+
+</resources>
